@@ -35,12 +35,10 @@ app.get('/', function (req, res) {
     res.render('inicio')
 
 });
-app.get('/inicio', function (req, res) {
-    res.render('inicio')
-});
-app.get('/privacidad', function (req, res) {
-    res.render('privacidad')
-});
+app.get('/:params?', function(req, res){
+    var params = req.params.params;
+    res.render(params);
+})
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function () {

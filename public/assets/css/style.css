@@ -1,0 +1,43 @@
+
+.fontNasser{
+    font-family: 'Nunito Sans', sans-serif !important;
+}
+.bannerPrivacidad{
+    height: 15rem;
+    background-image: url("/assets/images/bannerPrivacidad.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0s linear;
+    background-position: 25% 85%;
+}
+.avisoPrivacidadTitle{
+    margin-top: 35%;
+    font-weight: bolder;
+}
+.overlayPrivacidad{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.miniNav{
+    background-color: rgb(246, 244, 244);
+    padding-top: 1%;
+}
+.avisoDiv{
+    margin-top: 5%;
+}
+.footerfoot{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+@media(max-width:991px){
+    .miniNav{
+        padding-top: 2.5%;
+    }
+    .avisoPrivacidadTitle{
+        font-size: 1.5rem !important;
+    }
+}
