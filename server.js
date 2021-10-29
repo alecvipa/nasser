@@ -35,10 +35,62 @@ app.get('/', function (req, res) {
     res.render('inicio')
 
 });
-app.get('/:params?', function(req, res){
+app.get('/:params?', function (req, res) {
     var params = req.params.params;
     res.render(params);
 })
+
+// Nodemailer route
+
+app.post("/ajax/email", function (request, response) {
+    console.log(email);
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        secure: false,
+        port: 25,
+        auth: {
+            user: email,
+            pass: superSecretPwd
+        },
+        tls: {
+            rejectUnauthorized: false
+        }
+    });
+
+    var textBody = `FROM: ${request.body.name}; EMAIL: ${request.body.email}; MESSAGE: ${request.body.message}`;
+    var htmlBody = `<h2>Correo de contacto</h2><p>Nombre: ${request.body.name} </p> <p> Correo electrónico: <a href='mailto: ${request.body.email}'>${request.body.email}</a></p><p>Código Postal: ${request.body.zip}</p><p>Número de contacto:${request.body.number} </p><p>Checkbox: ${request.body.checkbox}</p>`;
+    var mail = {
+        from: 'Team: Xyncs Web Studio',
+        to: 'hebrit_626@hotmail.com',
+        subject: '¡Alguien ha dejado sus datos en tu sitio web!',
+        html: htmlBody
+    };
+    transporter.sendMail(mail, function (err, info) {
+        if (err) {
+            return console.log(err);
+        } else {
+            console.log("message sent!");
+        };
+    });
+    var mail = {
+        from: 'Team: Nasser Muebles',
+        to: request.body.email,
+        subject: '¡5% de descuento adicional!',
+        html: '<h2>Gracias por registrarte</h2> <h4>¡Ya tienes tu 5% adicional!</h4> <br/> <img src="cid:bannerPrivacidad.png"/>',
+        attachments: [{
+            filename: 'bannerPrivacidad.png',
+            path: 'public/assets/images/bannerPrivacidad.png',
+            cid: 'bannerPrivacidad' //same cid value as in the html img src
+        }]
+    };
+    transporter.sendMail(mail, function (err, info) {
+        if (err) {
+            return console.log(err);
+        } else {
+            console.log("Second message sent!");
+        };
+    });
+});
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function () {

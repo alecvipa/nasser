@@ -2,31 +2,31 @@
     <div class="bannerDescuento"></div>
     <div class="formularioDiv">
         <div class="container">
-            <form>
+            <form class="formInputs" action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Nombre</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre" required>
+                    <input name="name" type="text" class="form-control formInput" id="exampleInputEmail1" placeholder="Nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Correo electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    <input name="email" type="email" class="form-control formInput" id="exampleInputEmail1" aria-describedby="emailHelp"
                         placeholder="Correo electrónico" required>
                     <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con alguien
                         más.</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Código postal</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Código Postal" required>
+                    <input name="zip" type="text" class="form-control formInput" id="exampleInputPassword1" placeholder="Código Postal" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Número de celular</label>
-                    <input type="cel" class="form-control" id="exampleInputPassword1" placeholder="Número de celular" required>
+                    <input name="tel" type="cel" class="form-control formInput" id="exampleInputPassword1" placeholder="Número de celular" required>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <input name="checkBox" type="checkbox" class="form-check-input formInput" id="exampleCheck1" required>
                     <label class="form-check-label" for="exampleCheck1">Acepto aviso de privacidad</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                </div> <br>
+                <button type="submit" class="btn btn-success">Enviar</button>
             </form>
         </div>
     </div>
