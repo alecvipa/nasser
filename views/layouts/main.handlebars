@@ -42,6 +42,7 @@
             obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, zip: form.zip.value, number: form.tel.value, checkbox: form.checkBox.value }));
             alert("¡En breve te contactaremos!");
             $(".formInput").val(" ");
+            window.location.href = "/gracias";
             return false;
         }
     </script>

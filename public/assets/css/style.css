@@ -32,6 +32,42 @@
     padding-top: 3%;
     padding-bottom: 3%;
 }
+.bannerDescuento{
+    height: 40rem;
+    background-image: url("/assets/images/bannerLanding.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bannerInicio{
+    height: 15rem;
+    background-image: url("/assets/images/furniture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0s linear;
+    background-position: 25% 85%;
+    margin-bottom: 5%;
+}
+.bannerGracias{
+    height: 30rem;
+    background-image: url("/assets/images/furniture2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 0s linear;
+    background-position: 25% 85%;
+}
+.formularioDiv{
+    margin-bottom: 5%;
+}
+.contGracias{
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 8px;
+    margin-top: 13%;
+}
 
 @media(max-width:991px){
     .miniNav{
@@ -39,5 +75,17 @@
     }
     .avisoPrivacidadTitle{
         font-size: 1.5rem !important;
+    }
+    .bannerDescuento, .bannerInicio{
+        height: 11rem;
+    }
+    .formularioDiv{
+        margin-bottom: 10%;
+    }
+    .bannerInicio{
+        margin-bottom: 15%;
+    }
+    .contGracias{
+        margin-top: 40%;
     }
 }
