@@ -41,7 +41,7 @@
 }
 .bannerInicio{
     height: 15rem;
-    background-image: url("/assets/images/furniture.jpg");
+    background-image: url("/assets/images/furniture.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,19 +52,16 @@
 }
 .bannerGracias{
     height: 30rem;
-    background-image: url("/assets/images/furniture2.jpg");
+    background-image: url("/assets/images/furniture2.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    transition: 0s linear;
-    background-position: 25% 85%;
 }
 .formularioDiv{
     margin-bottom: 5%;
 }
 .contGracias{
-    background-color: rgba(0, 0, 0, 0.534);
+    background-color: rgba(0, 0, 0, 0.322);
     border-radius: 8px;
     margin-top: 13%;
 }
@@ -86,6 +83,9 @@
         margin-bottom: 15%;
     }
     .contGracias{
-        margin-top: 40%;
+        margin-top: 14%;
+    }
+    .bannerGracias{
+        height: 18rem;
     }
 }
