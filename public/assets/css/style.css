@@ -45,9 +45,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     transition: 0s linear;
-    background-position: 25% 85%;
+    background-position: 25% 85%; */
     margin-bottom: 5%;
 }
 .bannerGracias{
@@ -74,7 +74,7 @@
         font-size: 1.5rem !important;
     }
     .bannerDescuento, .bannerInicio{
-        height: 11rem;
+        height: 11.5rem;
     }
     .formularioDiv{
         margin-bottom: 10%;
