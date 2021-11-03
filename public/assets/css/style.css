@@ -40,14 +40,14 @@
     background-size: cover;
 }
 .bannerInicio{
-    height: 15rem;
+    height: 25rem;
     background-image: url("/assets/images/furniture.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed;
-    transition: 0s linear;
-    background-position: 25% 85%; */
+    transition: 0s linear; */
+    background-position: 25% 85%;
     margin-bottom: 5%;
 }
 .bannerGracias{
