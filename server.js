@@ -78,8 +78,8 @@ app.post("/ajax/email", function (request, response) {
         subject: '¡5% de descuento adicional!',
         html: '<h2>Gracias por registrarte</h2> <h4>¡Ya tienes tu 5% adicional!</h4> <br/> <img src="cid:bannerPrivacidad.png"/>',
         attachments: [{
-            filename: 'bannerPrivacidad.png',
-            path: 'public/assets/images/bannerPrivacidad.png',
+            filename: 'cupon.jpeg',
+            path: 'public/assets/images/cupon.jpeg',
             cid: 'bannerPrivacidad' //same cid value as in the html img src
         }]
     };
