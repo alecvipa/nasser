@@ -1,0 +1,45 @@
+<div class="contactoDiv">
+    {{!-- <div class="bannerDescuento">
+
+    </div> --}}
+    <div class="bannerInicio"></div>
+    <div class="formularioDiv">
+        <div class="container text-center">
+            <h4>¡Te invitamos a registrarte para recibir 5% extra de descuento adicional <br> al resto de las
+                promociones!</h4>
+        </div> <br>
+        <div class="container">
+            <form class="formInputs" action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre</label>
+                    <input name="name" type="text" class="form-control formInput" id="exampleInputEmail1"
+                        placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Correo electrónico</label>
+                    <input name="email" type="email" class="form-control formInput" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Correo electrónico" required>
+                    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo con alguien
+                        más.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Código postal</label>
+                    <input name="zip" type="text" class="form-control formInput" id="exampleInputPassword1"
+                        placeholder="Código Postal" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Número de celular</label>
+                    <input name="tel" type="cel" class="form-control formInput" id="exampleInputPassword1"
+                        placeholder="Número de celular" required>
+                </div>
+                <div class="form-check">
+                    <input name="checkBox" type="checkbox" class="form-check-input formInput" id="exampleCheck1"
+                        required>
+                    <label class="form-check-label" for="exampleCheck1">Acepto aviso de privacidad</label>
+                </div> <br>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+</div>
