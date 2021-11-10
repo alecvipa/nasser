@@ -57,6 +57,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.bannerProp{
+    height: 10rem;
+    margin-bottom: 5%;
+
+}
 .formularioDiv{
     margin-bottom: 5%;
 }
